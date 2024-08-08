@@ -1,0 +1,10 @@
+{
+  "ignores": [
+    "@commitlint/cli",
+    "@commitlint/config-conventional",
+    "sass-loader",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-standard",
+    "stylelint-prettier"
+  ]
+}
