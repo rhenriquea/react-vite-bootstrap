@@ -1,0 +1,40 @@
+#worlds_page {
+  height: 100vh;
+  background-color: #b6f0f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+
+  .page-background {
+    width: 1320px;
+  }
+
+  .worlds_container {
+    display: flex;
+    position: absolute;
+  }
+
+  .world_1 {
+    height: 350px;
+    width: 350px;
+    left: 16%;
+    position: relative;
+  }
+
+  .world_2 {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: -250px;
+    left: 12%;
+  }
+
+  .world_3 {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 62px;
+    left: -11%;
+  }
+}

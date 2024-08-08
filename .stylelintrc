@@ -1,0 +1,40 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss", "stylelint-prettier/recommended"],
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z0-9]+([_-][a-z0-9]+)*$",
+      {
+        "message": "Expected class selector to be snake_case or kebab-case with numbers allowed",
+        "severity": "warning"
+      }
+    ],
+    "selector-id-pattern": [
+      "^[a-z0-9]+([_-][a-z0-9]+)*$",
+      {
+        "message": "Expected id selector to be snake_case or kebab-case with numbers allowed",
+        "severity": "warning"
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ]
+  }
+}
