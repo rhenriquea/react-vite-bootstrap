@@ -62,6 +62,7 @@ Here's a detailed explanation of the scripts available in this project:
 - **`yarn preview`**: Previews the production build of the site locally. This is useful for testing the final output before deployment.
 
 - **`yarn scan`**: Runs three tools in sequence:
+
   - `depcheck`: Checks for unused dependencies in your project.
   - `ts-prune`: Identifies unused TypeScript exports.
   - `unimported`: Finds unused files in your project.
@@ -90,4 +91,3 @@ If you'd like to contribute to this project, follow these steps:
 ### 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-

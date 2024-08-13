@@ -1,0 +1,9 @@
+.color-button {
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+
+.color-button.active {
+  filter: brightness(150%);
+}

@@ -11,7 +11,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleRedirect = () => {
-    navigate('/worlds');
+    navigate('/playground');
   };
 
   return (
