@@ -8,9 +8,6 @@ const PlaygroundPage = () => {
       <h1>Playground</h1>
       <nav>
         <ul>
-          {/*           <li>
-            <Link to="baloon">BaloonPop Game</Link>
-          </li> */}
           <li>
             <Link to="concentration">Concentration Game</Link>
           </li>
@@ -28,6 +25,12 @@ const PlaygroundPage = () => {
           </li>
           <li>
             <Link to="filters">Filter AR</Link>
+          </li>
+          <li>
+            <Link to="emotions">Emotions</Link>
+          </li>
+          <li>
+            <Link to="yesno">Yes or No</Link>
           </li>
         </ul>
       </nav>
