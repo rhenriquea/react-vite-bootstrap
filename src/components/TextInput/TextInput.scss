@@ -1,8 +1,14 @@
+@import '../../sass/helpers/mixins';
+
+@import '../../sass/helpers/variables';
+
 input.text-input {
+  @include border-radius('xs');
+
   width: 400px;
   height: 36px;
-  padding: 12px;
-  border: 1px solid #707070;
+  padding: $spacing-sm;
+  border: $border-gray;
   border-radius: 8px;
   font-size: 14px;
 

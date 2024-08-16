@@ -1,0 +1,70 @@
+@import '../../sass/helpers/variables';
+
+@import '../../sass/helpers/mixins';
+
+.world-component {
+  .world-information {
+    @include flex-center;
+
+    position: absolute;
+    top: 100px;
+    flex-direction: column;
+
+    .world-title {
+      @include flex-center;
+
+      @include heading-font;
+
+      @include border-radius('sm');
+
+      background-color: $overlay;
+      padding: $spacing-sm;
+      text-align: center;
+      max-width: 300px;
+      margin-bottom: $spacing-md;
+    }
+
+    .world-links {
+      display: flex;
+      gap: $spacing-sm;
+
+      a {
+        &[aria-disabled='true'] {
+          @include disable-mouse;
+
+          filter: grayscale(100%);
+        }
+      }
+
+      figure {
+        width: 70px;
+        height: 70px;
+
+        img {
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (width <= 768px) {
+  .world-component {
+    .world-information {
+      top: 50px;
+
+      .world-title {
+        max-width: 100%;
+        padding: $spacing-sm;
+      }
+
+      .world-links {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

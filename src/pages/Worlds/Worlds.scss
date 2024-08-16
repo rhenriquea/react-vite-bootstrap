@@ -1,0 +1,40 @@
+@import '../../sass/helpers/variables';
+
+@import '../../sass/helpers/mixins';
+
+#worlds_page {
+  @include flex-center;
+
+  height: 100vh;
+  background-color: $body-bg-light-color;
+  padding: 4rem;
+
+  .page-background {
+    width: 1320px;
+  }
+
+  .worlds_container {
+    display: flex;
+    position: absolute;
+  }
+
+  .world {
+    height: 350px;
+    width: 350px;
+    position: relative;
+
+    &--1 {
+      left: 10%;
+    }
+
+    &--2 {
+      top: -220px;
+      left: 5%;
+    }
+
+    &--3 {
+      top: 62px;
+      left: -11%;
+    }
+  }
+}

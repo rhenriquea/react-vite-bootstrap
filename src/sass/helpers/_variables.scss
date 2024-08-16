@@ -1,34 +1,47 @@
 /* ---------------------------
 	Fonts
 ---------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+$base-font-size: 16;
+$base-font: 'Poppins', sans-serif;
+$heading-font: 'Lilita One', sans-serif;
+$letter-spacing: 0.1rem;
+$text-shadow: 2px 1px black;
+$font-size-large: 24px;
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
 
-// fonts
-$base-font-size: 15;
-$base-font: 'Urbanist';
-$heading-font: 'Urbanist';
-
-// color
+/* ---------------------------
+Colors
+---------------------------- */
 $dark-gray: #1a1729;
+$dark-blue: #000535;
 $body-color: #625f71;
 $white: #fff;
 $light: #ffebeb;
 $black: #000;
 $small-black: #333;
-$cyan: #848892;
+$gray: #848892;
 
-$theme-primary-color: #4540e1;
-$theme-primary-color-s2: #f2bc00;
-$theme-primary-color-s3: #15a280;
-$theme-primary-color-s4: #0467fd;
-$theme-primary-color-s5: #f9406c;
-$theme-primary-color-s6: #ff4c27;
+$theme-primary-button: #ffd967;
 $body-bg-color: #fff;
-$section-bg-color: #fcf9ef;
-$section-bg-color-s2: #f8f2f2;
-$text-color: #625f71;
-$text-light-color: #bfc4dc;
-$text-light-color-s2: #989aa5;
-$heading-color: $dark-gray;
-$border-color: #d9d9d9;
-$border-color-s2: #ddd;
+$body-bg-light-color: #b6f0f6;
+$overlay: #45454587;
+$error-bg-color: #cd5c5c;
+$error-text-color: $white;
+
+$border-gray: 1px solid $gray;
+
+$button-height: 50px;
+$button-width-lg: 200px;
+
+/* ---------------------------
+	Spacing
+---------------------------- */
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 40px;
+$spacing-xxl: 64px;

@@ -1,0 +1,55 @@
+@import '../../sass/helpers/variables';
+
+@import '../../sass/helpers/mixins';
+
+.login {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 0 $spacing-md;
+
+  &-logo {
+    margin-bottom: $spacing-xl;
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  &-error {
+    @include border-radius('xxs');
+
+    display: none;
+    background: $error-bg-color;
+    color: $error-text-color;
+    font-weight: $font-weight-medium;
+    padding: $spacing-xs;
+    margin-bottom: $spacing-sm;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-form {
+    margin-bottom: $spacing-xl;
+    text-align: center;
+
+    input {
+      margin-bottom: $spacing-sm;
+    }
+
+    &-actions {
+      @include flex-center;
+
+      margin-top: $spacing-sm;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+    color: $body-color;
+    font-family: $base-font;
+  }
+}
