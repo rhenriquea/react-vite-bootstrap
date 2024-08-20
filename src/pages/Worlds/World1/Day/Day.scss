@@ -1,0 +1,67 @@
+#day-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  nav a {
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    left: 24px;
+    top: 24px;
+
+    &:hover {
+      animation: rubberBand;
+      animation-duration: 2s;
+    }
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 400px;
+    }
+
+    figcaption {
+      position: absolute;
+      color: white;
+      top: 80px;
+      max-width: 200px;
+      text-align: center;
+      font-family: 'Lilita One', sans-serif;
+      font-size: 32px;
+      line-height: 28px;
+      text-shadow: 2px 1px #743700;
+    }
+  }
+
+  /* Animation */
+  .anim-typewriter {
+    animation:
+      typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 24em;
+    }
+  }
+
+  @keyframes blink-text-cursor {
+    from {
+      border-right-color: #ffffffbf;
+    }
+
+    to {
+      border-right-color: transparent;
+    }
+  }
+}

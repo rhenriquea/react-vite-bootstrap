@@ -40,6 +40,11 @@
         width: 70px;
         height: 70px;
 
+        &:hover {
+          animation: heartBeat infinite;
+          animation-duration: 2s;
+        }
+
         img {
           background-size: contain;
         }
@@ -63,6 +68,11 @@
         img {
           width: 50px;
           height: 50px;
+
+          &:hover {
+            animation: bounce; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+          }
         }
       }
     }

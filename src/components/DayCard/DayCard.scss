@@ -1,0 +1,81 @@
+#day-card-component {
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    &.locked-card {
+      position: absolute;
+    }
+  }
+
+  h2 {
+    font-family: 'Playpen Sans', cursive;
+    font-size: 42px;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 36px;
+    color: #743700;
+  }
+
+  h3 {
+    font-family: 'Playpen Sans', cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 8px;
+    color: #743700;
+  }
+
+  h4 {
+    margin: 16px 0;
+    font-family: 'Playpen Sans', cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #743700;
+    font-size: 24px;
+  }
+
+  figure {
+    &.character-figure {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  a.play-btn {
+    background: #b9e061;
+    background: linear-gradient(180deg, #b9e061 0%, #64c509 25%, #5cc315 50%, #2eb401 100%);
+    color: white;
+    border: 2px solid #b9e061;
+    padding: 8px;
+    border-radius: 32px;
+    width: 200px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    text-shadow: 2px 1px #743700;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &:hover {
+      animation: rubberBand;
+      animation-duration: 2s;
+    }
+
+    img {
+      width: 30px;
+      margin-left: 8px;
+    }
+  }
+}

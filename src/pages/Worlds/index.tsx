@@ -1,4 +1,5 @@
 import './Worlds.scss';
+import 'animate.css';
 
 import World, { WorldProps } from '../../components/World';
 import courHead from '../../images/worlds/cour_head.png';
@@ -52,7 +53,10 @@ const WorldsPage = () => {
     <div id="worlds_page">
       <div className="worlds_container">
         {worldsData.map((world, index) => (
-          <div key={index} className={`world world--${index + 1}`}>
+          <div
+            key={index}
+            className={`world world--${index + 1} animate__animated animate__fadeInDown animate__faster animate__delay-${index}s`}
+          >
             <World {...world} />
           </div>
         ))}

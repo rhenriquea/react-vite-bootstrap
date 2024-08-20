@@ -11,6 +11,7 @@ import SimonSaysGame from '../pages/Playground/SimonSaysGame';
 import TypingGamePage from '../pages/Playground/TypingGamePage';
 import YesNoGame from '../pages/Playground/YesNoGame';
 import WorldsPage from '../pages/Worlds';
+import DayPage from '../pages/Worlds/World1/Day';
 import RespaPage from '../pages/Worlds/World1/RESPA';
 
 const Router = () => {
@@ -21,6 +22,7 @@ const Router = () => {
           <Route path="/" element={<LoginPage />} />
           <Route path="/worlds" element={<WorldsPage />} />
           <Route path="/worlds/respa" element={<RespaPage />} />
+          <Route path="/worlds/respa/:id" element={<DayPage />} />
           <Route path="/playground" element={<PlaygroundPage />} />
           <Route path="/playground/concentration" element={<ConcentrationGame />} />
           <Route path="/playground/drop" element={<DragNDropGamePage />} />

@@ -1,3 +1,95 @@
-h1 {
-  font-size: 36px;
+#respa-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  nav a {
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    left: 24px;
+    top: 24px;
+
+    &:hover {
+      animation: rubberBand;
+      animation-duration: 2s;
+    }
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 400px;
+    }
+
+    figcaption {
+      position: absolute;
+      color: white;
+      top: 80px;
+      max-width: 200px;
+      text-align: center;
+      font-family: 'Lilita One', sans-serif;
+      font-size: 32px;
+      line-height: 28px;
+      text-shadow: 2px 1px #743700;
+    }
+  }
+
+  .swipper {
+    height: 400px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-prev,
+    &-next {
+      opacity: 0.5;
+    }
+  }
+
+  .swiper-button-prev {
+    background-image: url('../../../../images/worlds/slide_arrow_left.png');
+  }
+
+  .swiper-button-next {
+    background-image: url('../../../../images/worlds/slide_arrow_right.png');
+  }
+
+  .swiper-button {
+    &-next,
+    &-prev {
+      background-position: center;
+      background-size: 80px;
+      background-repeat: no-repeat;
+      padding: 40px;
+
+      &:hover {
+        animation: heartBeat infinite;
+        animation-duration: 2s;
+      }
+    }
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+  }
+
+  .swiper-container {
+    height: 70vh;
+    margin: 0 auto;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

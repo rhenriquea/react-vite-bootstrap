@@ -1,4 +1,5 @@
 import './World.scss';
+import 'animate.css';
 
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
